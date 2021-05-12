@@ -1,0 +1,41 @@
+//VARIABLES
+
+/*FONTS*/
+$primaryFont: "DIN Condensed Bold";
+$secondaryFont: "Gill Sans";
+/*COLORS*/
+$charcoal: #333333;
+$lightSalmon: #ffdac9;
+$white: #ffffff;
+$lightGrey: #f8f8f8;
+$mediumGrey: #767676;
+/*WIDTH*/
+$maxWidth: 1366px;
+
+//FONT IMPORTS
+@font-face {
+	font-family: "Gill Sans";
+	src: url("../../fonts/GillSans.ttc");
+}
+@font-face {
+	font-family: "DIN Condensed Bold";
+	src: url("../../fonts/DINCondensedBold.ttf");
+}
+
+//RESET STYLES
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+html {
+	font-size: 10px;
+}
+
+//AUX CLASSES
+.flex {
+	display: flex;
+}

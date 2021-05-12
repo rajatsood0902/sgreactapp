@@ -1,0 +1,110 @@
+.footer-container {
+	width: 100vw;
+	height: 323px;
+	background-color: $charcoal;
+	align-items: center;
+	justify-content: center;
+
+	.footer-container-box {
+		width: $maxWidth;
+		height: 100%;
+
+		flex-direction: column;
+		padding-left: 136px;
+		padding-right: 136px;
+		.footer-box {
+			margin-top: 64px;
+			justify-content: space-between;
+		}
+		.footer-box div {
+			&:nth-child(1) {
+				display: flex;
+				justify-content: space-between;
+				width: 623px;
+				height: 148px;
+
+				ul {
+					li {
+						font-family: $secondaryFont;
+						font-size: 1.3rem;
+						letter-spacing: 0.13px;
+						color: $mediumGrey;
+						margin-bottom: 15px;
+						&:first-child {
+							font-family: $primaryFont;
+							font-size: 1.4rem;
+							text-transform: uppercase;
+							letter-spacing: 0.14px;
+							color: $lightSalmon;
+						}
+					}
+				}
+			}
+			&:nth-child(2) {
+				width: 230px;
+				height: 148px;
+				margin-left: 224px;
+
+				h3 {
+					font-size: 3.5rem;
+					font-family: $primaryFont;
+					color: $white;
+					text-transform: uppercase;
+					text-align: right;
+					line-height: 42px;
+					span {
+						font-size: 6.2rem;
+					}
+				}
+			}
+		}
+		.social-media-footer {
+			margin-top: 50px;
+			height: 26px;
+			display: flex;
+			justify-content: space-between;
+
+			p {
+				font-family: $secondaryFont;
+				font-size: 1.3rem;
+				letter-spacing: 0.13px;
+				line-height: 20px;
+				color: $mediumGrey;
+			}
+
+			.social-media-icon-container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 230px;
+				height: 100%;
+
+				.facebook-icon,
+				.twitter-icon,
+				.instagram-icon,
+				.linkedin-icon,
+				.dribbble-icon {
+					width: 20px;
+					height: 20px;
+					background-repeat: no-repeat;
+				}
+
+				.facebook-icon {
+					background-image: url("../../img/facebook-icon.png");
+				}
+				.twitter-icon {
+					background-image: url("../../img/twitter-icon.png");
+				}
+				.instagram-icon {
+					background-image: url("../../img/instagram-icon.png");
+				}
+				.linkedin-icon {
+					background-image: url("../../img/Linkedin-icon.png");
+				}
+				.dribbble-icon {
+					background-image: url("../../img/dribbble-icon.png");
+				}
+			}
+		}
+	}
+}
